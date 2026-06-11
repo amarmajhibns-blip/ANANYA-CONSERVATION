@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANANYA CONSERVATION</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4b');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+header h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+header p{
+font-size:22px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+nav{
+background:#1b4332;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#1b4332;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#1b4332;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact{
+background:#1b4332;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+background:#081c15;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+.about{
+grid-template-columns:1fr;
+}
+header h1{
+font-size:40px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<h1>ANANYA CONSERVATION</h1>
+<p>Building Restoration, Renovation & Heritage Conservation Specialists</p>
+<a href="#contact" class="btn">Get a Free Consultation</a>
+</header>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="">
+<div>
+<h3>Experts in Building Conservation</h3>
+<br>
+<p>
+ANANYA CONSERVATION specializes in restoring old buildings,
+structural renovation, heritage preservation and modern redevelopment.
+Our mission is to preserve architectural value while creating durable,
+beautiful and sustainable spaces.
+</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Building Restoration</h3>
+<p>Professional restoration of damaged and aging structures.</p>
+</div>
+
+<div class="card">
+<h3>Renovation Works</h3>
+<p>Transforming old spaces into modern functional buildings.</p>
+</div>
+
+<div class="card">
+<h3>Heritage Conservation</h3>
+<p>Preserving historic buildings and architectural assets.</p>
+</div>
+
+<div class="card">
+<h3>Structural Repair</h3>
+<p>Strengthening and repairing critical structural elements.</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Recent Projects</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4b">
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title" style="color:white;">Contact Us</h2>
+
+<p><strong>ANANYA CONSERVATION</strong></p>
+<p>Building Restoration & Conservation Services</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+<p>Email: info@ananyaconservation.com</p>
+</section>
+
+<footer>
+© 2026 ANANYA CONSERVATION | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="#">WhatsApp</a>
+
+</body>
+</html>
